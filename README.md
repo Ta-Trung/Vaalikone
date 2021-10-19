@@ -1,0 +1,2 @@
+# Vaalikone
+ School project - HAMK

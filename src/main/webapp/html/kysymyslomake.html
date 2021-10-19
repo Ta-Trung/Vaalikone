@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vaalikone</title>
+ <style>
+	/*Container*/
+	.container {
+	font-size: 20px;
+	text-align: left;
+	margin-top: 50 px;
+	margin-left: 50px;
+	}
+    
+    /* Animated button*/
+	.button {
+  	  padding: 5px 10px;
+  	  font-size: 18px;
+ 	  text-align: center;
+  	  cursor: pointer;
+  	  outline: none;
+  	  color: #fff;
+  	  background-color: #7CC7F3;
+  	  border: none;
+  	  border-radius: 15px;
+  	  box-shadow: 0 9px #999;
+	}
+
+	.button:hover {background-color: #2da6eb}
+
+	.button:active {
+  	  background-color: #a58af4;
+  	  box-shadow: 0 5px #666;
+  	  transform: translateY(4px);
+	}
+</style>
+</head>
+<body>
+<div class ="container">
+	<h3>Kysymyslomake</h3>
+    	<form action='./lisaakysymys' method='post'>
+    	<br>
+    	Kirjoita vaalikoneen kysymys:<br><input type='text' name='kysymys' value=''><br><br><br>
+    	<input type="submit" class = "button" name="ok" value="Valmis">
+    	</form>
+</div>
+</body>
+</html>

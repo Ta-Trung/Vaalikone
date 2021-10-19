@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang='fi'>
+<head>
+<meta charset="UTF-8">
+<title>Vaalikone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Grey background color, white text and some padding */
+  .navbar {
+      background-color: #BEC3C6;
+      color: white;
+      padding: 30px; 
+      margin-bottom: 0px;
+   }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+    height: 300 px
+    }
+    
+    /* Blue background color and 100% height */
+    .sidenav {
+      padding-top: 700px;
+      background-color: #7CC7F3;
+      height: 100%;
+    }
+    
+    /* Grey background color, white text and some padding */
+    footer {
+      background-color: #BEC3C6;
+      color: white;
+      font-size: 20px;
+      padding: 30px;
+    }
+        
+    /* For small screens, height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {
+      height:auto;
+      } 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+          <a class="navbar-brand" href="#">KoodausX</a>
+     </div>
+  </div>
+</nav>
+
+<div class="container-fluid">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-center"> 
+      <br><br>
+	<h2>Vaalikone</h2>
+	<form action='./lisaatiedosto' method='post'>
+	
+	<h3>Toisen asteen koulutukseen (esim. lukio, ammatillinen oppilaitos) tulee olla mahdollista osallistua muuttamatta pois kotoa.</h3>
+		<div class="col-sm-1 text-center">
+		</div>
+			<div class="col-sm-2 text-center">
+			 <p><label for="option_1">Täysin eri mieltä</label>
+			 <p><input id="option_1" name="question_1" type="radio" value="1">
+			</div>
+
+			<div class="col-sm-2 text-center">
+			  <p><label for="option_2">Osittain eri mieltä</label>
+			  <p><input id="option_2" name="question_1" type="radio" value="2">
+			</div>
+
+			<div class="col-sm-2 text-center">
+			  <p><label for="option_3">En osaa sanoa</label>
+			  <p><input id="option_3" name="question_1" type="radio" value="3">
+			</div>
+
+			<div class="col-sm-2 text-center">
+			  <p><label for="option_4">Osittain samaa mieltä</label>
+			  <p><input id="option_4" name="question_1" type="radio" value="4">
+			</div>
+
+			<div class="col-sm-2 text-center">
+			  <p><label for="option_5">Täysin samaa mieltä</label>
+			  <p><input id="option_5" name="question_1" type="radio" value="5">		 
+			</div>
+		<div class="col-sm-1 text-center">
+		</div>
+		</div>
+		<div class="col-sm-2 sidenav">
+    	</div>
+   	  </div>
+    </div>   
+<p>
+<h3>Kunnan asioista tulee viestiä aktiivisesti kaikenikäisiä kiinnostavilla tavoilla hyödyntäen esimerkiksi sosiaalisen median kanavia.</h3>
+<label for="option_1">Täysin eri mieltä</label>
+<input id="option_1" name="question_2" type="radio" value="1"><br>
+<label for="option_2">Lähes eri mieltä</label>
+<input id="option_2" name="question_2" type="radio" value="2"><br>
+<label for="option_3">Neutraali</label>
+<input id="option_3" name="question_2" type="radio" value="3"><br>
+<label for="option_4">Lähes samaa mieltä</label>
+<input id="option_4" name="question_2" type="radio" value="4"><br>
+<label for="option_5">Täysin samaa mieltä</label>
+<input id="option_5" name="question_2" type="radio" value="5"><br>
+<p>
+<h3>Kunnassa tulee panostaa vähäpäästöiseen liikkumiseen tukemalla autoilun sijaan joukkoliikennettä, pyöräilyä ja kävelyä.</h3>
+<label for="option_1">Täysin eri mieltä</label>
+<input id="option_1" name="question_3" type="radio" value="1"><br>
+<label for="option_2">Lähes eri mieltä</label>
+<input id="option_2" name="question_3" type="radio" value="2"><br>
+<label for="option_3">Neutraali</label>
+<input id="option_3" name="question_3" type="radio" value="3"><br>
+<label for="option_4">Lähes samaa mieltä</label>
+<input id="option_4" name="question_3" type="radio" value="4"><br>
+<label for="option_5">Täysin samaa mieltä</label>
+<input id="option_5" name="question_3" type="radio" value="5"><br>
+<p>
+<h3>Kunnan on tuettava nuorten työllistymistä ja sitä tukevia palveluita tarvittaessa muiden väestöryhmien edelle.</h3>
+<label for="option_1">Täysin eri mieltä</label>
+<input id="option_1" name="question_4" type="radio" value="1"><br>
+<label for="option_2">Lähes eri mieltä</label>
+<input id="option_2" name="question_4" type="radio" value="2"><br>
+<label for="option_3">Neutraali</label>
+<input id="option_3" name="question_4" type="radio" value="3"><br>
+<label for="option_4">Lähes samaa mieltä</label>
+<input id="option_4" name="question_4" type="radio" value="4"><br>
+<label for="option_5">Täysin samaa mieltä</label>
+<input id="option_5" name="question_4" type="radio" value="5"><br>
+<p>
+<h3>Mielenterveyspalveluihin hakeutuneen henkilön on saatava apua viikon sisällä.</h3>
+<label for="option_1">Täysin eri mieltä</label>
+<input id="option_1" name="question_5" type="radio" value="1"><br>
+<label for="option_2">Lähes eri mieltä</label>
+<input id="option_2" name="question_5" type="radio" value="2"><br>
+<label for="option_3">Neutraali</label>
+<input id="option_3" name="question_5" type="radio" value="3"><br>
+<label for="option_4">Lähes samaa mieltä</label>
+<input id="option_4" name="question_5" type="radio" value="4"><br>
+<label for="option_5">Täysin samaa mieltä</label>
+<input id="option_5" name="question_5" type="radio" value="5"><br>
+<input type='submit' name='ok' value='Valmis'>
+</form>
+
+</body>
+</html>
